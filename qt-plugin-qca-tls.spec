@@ -15,7 +15,7 @@ BuildRequires:	openssl-devel >= 0.9.7c
 BuildRequires:	qt-devel >= 3.1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_plugindir %{_libdir}/qt/plugins-mt/crypt
+%define		_plugindir %{_libdir}/qt/plugins-mt/crypto
 
 %description
 A plugin to provide SSL/TLS capability to programs that utilize the Qt
