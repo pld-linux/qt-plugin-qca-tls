@@ -1,12 +1,12 @@
-%define		rname qca-tls
 Summary:	Qt Cryptographic Architecture (QCA) SSL/TLS plugin
 Summary(pl):	Wtyczka SSL/TLS dla Qt Cryptographic Architecture (QCA)
 Name:		qt-plugin-qca-tls
 Version:	1.0
 Release:	1
 Epoch:		1
-License:	GPL v2
+License:	LGPL v2.1
 Group:		Libraries
+%define		rname	qca-tls
 Source0:	http://psi.affinix.com/beta/%{rname}-%{version}.tar.bz2
 # Source0-md5:	886b1f60fc31de3b1a0bd93281e27b73
 URL:		http://psi.affinix.com/
@@ -31,7 +31,7 @@ korzystaj±cych z Qt Cryptographic Architecture (QCA).
 %build
 ./configure \
 	--qtdir="%{_prefix}"
-	
+
 %{__make}
 
 %install
