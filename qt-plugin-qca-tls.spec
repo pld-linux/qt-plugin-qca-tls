@@ -11,7 +11,7 @@ Source0:	http://psi.affinix.com/beta/%{rname}-%{version}.tar.bz2
 # Source0-md5:	886b1f60fc31de3b1a0bd93281e27b73
 URL:		http://psi.affinix.com/
 BuildRequires:	libstdc++-devel
-BuildRequires:	openssl-devel >= 0.9.7c
+BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	qt-devel >= 3.1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
