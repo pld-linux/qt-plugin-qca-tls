@@ -6,6 +6,6 @@ diff -aurN qca-tls-20031209.orig/qcextra qca-tls-20031209/qcextra
  
  cat >extra.pri <<EOT
 -target.path=$QTDIR/plugins/crypto
-+target.path= $QTDIR/lib/qt/plugins-mt/crypt
++target.path= $QTDIR/lib/qt/plugins-mt/crypto
  INSTALLS += target
  EOT
