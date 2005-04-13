@@ -13,6 +13,7 @@ Source0:	http://delta.affinix.com/qca/%{rname}-1.0.tar.bz2
 URL:		http://delta.affinix.com/qca/
 BuildRequires:	libstdc++-devel
 BuildRequires:	openssl-devel >= 0.9.7d
+BuildRequires:	qmake
 BuildRequires:	qt-devel >= 3.1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
