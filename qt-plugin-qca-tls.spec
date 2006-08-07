@@ -4,12 +4,13 @@ Summary:	Qt Cryptographic Architecture (QCA) SSL/TLS plugin
 Summary(pl):	Wtyczka SSL/TLS dla Qt Cryptographic Architecture (QCA)
 Name:		qt-plugin-%{rname}
 Version:	1.0
-Release:	3
+Release:	4
 Epoch:		1
 License:	LGPL v2.1
 Group:		Libraries
 Source0:	http://delta.affinix.com/qca/%{rname}-1.0.tar.bz2
 # Source0-md5:	886b1f60fc31de3b1a0bd93281e27b73
+Patch0:		%{name}-openssl9x.patch
 URL:		http://delta.affinix.com/qca/
 BuildRequires:	libstdc++-devel
 BuildRequires:	openssl-devel >= 0.9.7d
@@ -29,6 +30,7 @@ korzystaj±cych z Qt Cryptographic Architecture (QCA).
 
 %prep
 %setup -qn %{rname}-%{version}
+%patch0 -p1
 
 %build
 export QTDIR=%{_prefix}
