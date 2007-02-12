@@ -1,7 +1,7 @@
 %define		rname qca-tls
 #
 Summary:	Qt Cryptographic Architecture (QCA) SSL/TLS plugin
-Summary(pl):	Wtyczka SSL/TLS dla Qt Cryptographic Architecture (QCA)
+Summary(pl.UTF-8):   Wtyczka SSL/TLS dla Qt Cryptographic Architecture (QCA)
 Name:		qt-plugin-%{rname}
 Version:	1.0
 Release:	4
@@ -24,9 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A plugin to provide SSL/TLS capability to programs that utilize the Qt
 Cryptographic Architecture (QCA).
 
-%description -l pl
-Wtyczka pozwalaj±ca wykorzystaæ mo¿liwo¶ci SSL/TLS w programach
-korzystaj±cych z Qt Cryptographic Architecture (QCA).
+%description -l pl.UTF-8
+Wtyczka pozwalajÄ…ca wykorzystaÄ‡ moÅ¼liwoÅ›ci SSL/TLS w programach
+korzystajÄ…cych z Qt Cryptographic Architecture (QCA).
 
 %prep
 %setup -qn %{rname}-%{version}
