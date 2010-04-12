@@ -4,7 +4,7 @@ Summary:	Qt Cryptographic Architecture (QCA) SSL/TLS plugin
 Summary(pl.UTF-8):	Wtyczka SSL/TLS dla Qt Cryptographic Architecture (QCA)
 Name:		qt-plugin-%{rname}
 Version:	1.0
-Release:	8
+Release:	9
 Epoch:		1
 License:	LGPL v2.1
 Group:		Libraries
