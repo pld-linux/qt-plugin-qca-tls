@@ -1,16 +1,16 @@
-%define		rname qca-tls
-#
+%define		realname qca-tls
 Summary:	Qt Cryptographic Architecture (QCA) SSL/TLS plugin
 Summary(pl.UTF-8):	Wtyczka SSL/TLS dla Qt Cryptographic Architecture (QCA)
-Name:		qt-plugin-%{rname}
+Name:		qt-plugin-%{realname}
 Version:	1.0
-Release:	10
+Release:	11
 Epoch:		1
 License:	LGPL v2.1
 Group:		Libraries
-Source0:	http://delta.affinix.com/qca/%{rname}-1.0.tar.bz2
+Source0:	http://delta.affinix.com/qca/%{realname}-%{version}.tar.bz2
 # Source0-md5:	886b1f60fc31de3b1a0bd93281e27b73
 Patch0:		%{name}-openssl9x.patch
+Patch1:		openssl.patch
 URL:		http://delta.affinix.com/qca/
 BuildRequires:	libstdc++-devel
 BuildRequires:	openssl-devel >= 0.9.7d
@@ -29,14 +29,15 @@ Wtyczka pozwalająca wykorzystać możliwości SSL/TLS w programach
 korzystających z Qt Cryptographic Architecture (QCA).
 
 %prep
-%setup -qn %{rname}-%{version}
+%setup -qn %{realname}-%{version}
 %patch0 -p1
+%patch1 -p1
 
 %build
 export QTDIR=%{_prefix}
 ./configure
 
-qmake %{rname}.pro \
+qmake %{realname}.pro \
 	QMAKE_CXX="%{__cxx}" \
 	QMAKE_LINK="%{__cxx}" \
 	QMAKE_CXXFLAGS_RELEASE="%{rpmcflags}" \
